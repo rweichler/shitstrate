@@ -8,9 +8,7 @@ A version of the Obj-C MobileSubstrate without the assembly voodoo in order to d
 > 
 > &lt;rpetrich&gt; rweichler: Foo has a -baz method, which isn't overridden on Bar
 > 
-> &lt;rpetrich&gt; rweichler: your tweak hooks the -baz method on Bar to add its behaviours, and like a good citizen calls through to the original
-> 
->             implementation
+> &lt;rpetrich&gt; rweichler: your tweak hooks the -baz method on Bar to add its behaviours, and like a good citizen calls through to the original implementation
 > 
 > &lt;rpetrich&gt; rweichler: later on, my tweak decides it also wants to hook -baz, this time on Foo
 > 
