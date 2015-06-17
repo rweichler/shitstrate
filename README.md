@@ -16,7 +16,7 @@ This is mostly for my reference, but this demonstrates why assembly is necessary
 > 
 > &lt;rpetrich&gt; rweichler: if you aren't careful about how you apply the hook on your end, the answer might be no!
 
-The first thing I thought of was, if you don't have an original method, then you just have a dummy original method that just calls the superclass's. Kind of like:
+The first thing I thought of was, if you don't have an original method, then you just have a dummy original method that just calls the superclass's.
 
 ```objc
 NSString *generic_original(id self, SEL _cmd)
@@ -48,4 +48,8 @@ NSString *generic_original2(id self, SEL _cmd, int arg1)
 }
 ```
 
-And that's obviously not very generic and user friendly like MobileSubstrate is. Hence the assembly. Probably as a way to insert that method and have those types of dynamic arguments.
+And that's obviously not generic at all. You'd somehow need to figure out the # of arguments on the fly. Hence the assembly.
+
+______
+
+A followup is I wonder if you could use method_getTypeEncoding to somehow create this generic function.
