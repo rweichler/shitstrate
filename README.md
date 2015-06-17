@@ -1,6 +1,6 @@
 # Shitstrate
 
-A version of the Obj-C MobileSubstrate without the assembly voodoo in order to demonstrate why it's necessary
+This is mostly for my reference, but this demonstrates why assembly is necessary in MobileSubstrate, even with hooking Objective C.
 
 > &lt;rpetrich&gt; rweichler: the problems are around calling through to the "original" method implementation
 > 
